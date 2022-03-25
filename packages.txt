@@ -1,0 +1,5 @@
+mysql2
+sequelize
+express
+express-handlebars
+dotenv
