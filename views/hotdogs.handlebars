@@ -12,12 +12,7 @@
 
 <div id="hotdogs">
   {{#each hotdogs}}
-  <div>
-    <hr>
-    <h3>Name: {{name}}</h3>
-    <p>Description: {{description}}</p>
-    <hr>
-  </div>
+  {{> hotdog-details }}
   {{/each}}
 </div>
 

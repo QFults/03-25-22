@@ -1,10 +1,11 @@
 require('dotenv').config()
 
 const exphbs = require('express-handlebars')
+const helpers = require('./utils/helpers')
 const express = require('express')
 const { join } = require('path')
 
-const hbs = exphbs.create({ })
+const hbs = exphbs.create({ helpers })
 const app = express()
 
 app.use(express.static(join(__dirname, 'public')))
